@@ -7,24 +7,24 @@ impl Solution {
         let mut a: i32 = 1;
         let mut b: i32 = 1;
         let mut c: i32 = 1;
-        let finalA = 2;
-        let finalB = 3;
-        let finalC = 5;
+        let final_a = 2;
+        let final_b = 3;
+        let final_c = 5;
         let mut i = 1;
-        let mut nextA = a * finalA;
-        let mut nextB = b * finalB;
-        let mut nextC = c * finalC;
+        let mut next_a = a * final_a;
+        let mut next_b = b * final_b;
+        let mut next_c = c * final_c;
         while i < n {
-            let minNum = cmp::min(nextA, cmp::min(nextB, nextC));
-            if minNum == nextA {
-                a = nextA;
-                nextA *= finalA;
-            } else if minNum == b * finalB {
-                b = nextB;
-                nextB *= finalB;
+            let min_num = cmp::min(next_a, cmp::min(next_b, next_c));
+            if min_num == next_a {
+                a = next_a;
+                next_a *= final_a;
+            } else if min_num == b * final_b {
+                b = next_b;
+                next_b *= final_b;
             } else {
-                c = nextC;
-                nextC *= finalC;
+                c = next_c;
+                next_c *= final_c;
             }
             i += 1;
         }
