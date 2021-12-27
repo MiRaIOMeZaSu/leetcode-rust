@@ -41,7 +41,7 @@ impl Solution {
             } else {
                 // 断掉了
                 // 总长为curr
-                if curr > 1 {
+                if curr > 1 && agesMut[i]  > 14 {
                     ans += (curr * (curr - 1)) / 2;
                 }
                 curr = 1;
@@ -60,5 +60,6 @@ mod tests {
     fn test_825() {
         assert_eq!(2, Solution::num_friend_requests(vec![16, 16]));
         assert_eq!(2, Solution::num_friend_requests(vec![16, 17, 18]));
+        assert_eq!(29, Solution::num_friend_requests(vec![73,106,39,6,26,15,30,100,71,35,46,112,6,60,110]));
     }
 }
