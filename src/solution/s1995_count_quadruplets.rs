@@ -15,8 +15,7 @@ impl Solution {
             i += 1;
         }
         // 开始遍历
-        i = 0;
-        let mut j: usize = 1;
+        let mut j: usize;
         let mut k: usize = 2;
         // i不能大于right - 1
         while k < size  - 1{
@@ -26,9 +25,9 @@ impl Solution {
                 loop {
                     // 开始加和
                     let key = nums[i] + nums[j] + nums[k];
-                    let tempCount = *counts.entry(key).or_insert(0);
-                    if tempCount > 0{
-                        ans += tempCount;
+                    let temp_count = *counts.entry(key).or_insert(0);
+                    if temp_count > 0{
+                        ans += temp_count;
                     }
                     if i == 0 {
                         break;
