@@ -1,6 +1,5 @@
-use std::cmp;
 use std::cmp::Ordering;
-use std::collections::{BinaryHeap, HashMap, HashSet};
+use std::collections::{BinaryHeap, HashSet};
 
 pub struct Solution {}
 
@@ -35,7 +34,7 @@ impl Solution {
         let mut list: Vec<i32> = vec![];
         let n_usize = usize::from(n as u16);
         list.push(1);
-        let mut i: usize = 0;
+        let mut i: usize;
         let mut index: usize = 0;
         while list.len() < n_usize {
             // 开始计算
