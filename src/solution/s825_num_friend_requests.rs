@@ -3,12 +3,12 @@ pub struct Solution {}
 impl Solution {
     pub fn num_friend_requests(ages: Vec<i32>) -> i32 {
         // 使用滑动窗口法
-        let mut agesMut: Vec<i32> = vec![];
+        let mut ages_mut: Vec<i32> = vec![];
         for age in ages {
-            agesMut.push(age);
+            ages_mut.push(age);
         }
-        agesMut.sort();
-        let size: usize = agesMut.len();
+        ages_mut.sort();
+        let size: usize = ages_mut.len();
         let mut left: i32 = -1;
         // let mut right: i32 = -1;
         let mut ans: i32 = 0;
@@ -16,7 +16,7 @@ impl Solution {
         while i < size {
             let mut index: usize = usize::from((left + 1) as u16);
             while index < i {
-                if agesMut[index] * 2 <= agesMut[i] + 14 {
+                if ages_mut[index] * 2 <= ages_mut[i] + 14 {
                     // 不可以发送分支
                     left += 1;
                     index += 1;
@@ -36,12 +36,12 @@ impl Solution {
         i = 0;
         let mut curr: i32 = 1;
         while i < size {
-            if i + 1 < size && agesMut[i + 1] == agesMut[i] {
+            if i + 1 < size && ages_mut[i + 1] == ages_mut[i] {
                 curr += 1;
             } else {
                 // 断掉了
                 // 总长为curr
-                if curr > 1 && agesMut[i]  > 14 {
+                if curr > 1 && ages_mut[i]  > 14 {
                     ans += (curr * (curr - 1)) / 2;
                 }
                 curr = 1;
