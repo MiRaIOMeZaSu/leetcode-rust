@@ -12,7 +12,7 @@ impl Solution {
         // 创建
         let mut index: usize = 0;
         let mut i: usize = 0;
-        let mut j: usize = 0;
+        let mut j: usize;
         while i < m_usize {
             j = 0;
             let mut temp: Vec<i32> = vec![];

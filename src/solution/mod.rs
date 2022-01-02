@@ -4,3 +4,4 @@ mod s686_repeated_string_match;
 mod s264_nth_ugly_number;
 mod s825_num_friend_requests;
 mod s2022_construct2_d_array;
+mod s390_last_remaining;
