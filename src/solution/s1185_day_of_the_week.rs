@@ -10,12 +10,15 @@ impl Solution {
         let y_times = y / 4;
         y %= 4;
         ans += usize::from((y_times * (365 * 3 + 366) + y * 365) as u16);
+        if y > 1 {
+            ans += 1;
+        }
         if month >= 2 {
             ans += 31;
         }
         if month >= 3 {
             ans += 28;
-            if year % 4 == 0 {
+            if year % 4 == 0 && (year % 100 != 0 || year % 400 == 0) {
                 ans += 1;
             }
         }
@@ -52,16 +55,16 @@ mod tests {
 
     #[test]
     fn test_1185() {
-        // assert_eq!("Friday", Solution::day_of_the_week(1, 1, 1971));
-        // assert_eq!("Tuesday", Solution::day_of_the_week(30, 11, 1971));
+        assert_eq!("Friday", Solution::day_of_the_week(1, 1, 1971));
+        assert_eq!("Tuesday", Solution::day_of_the_week(30, 11, 1971));
         assert_eq!("Saturday", Solution::day_of_the_week(1, 1, 1972));
-        assert_eq!("Sunday", Solution::day_of_the_week(1, 1, 1973));
-        assert_eq!("Monday", Solution::day_of_the_week(1, 1, 1974));
+        assert_eq!("Monday", Solution::day_of_the_week(1, 1, 1973));
+        assert_eq!("Tuesday", Solution::day_of_the_week(1, 1, 1974));
         assert_eq!("Wednesday", Solution::day_of_the_week(1, 1, 1975));
         assert_eq!("Thursday", Solution::day_of_the_week(1, 1, 1976));
-        // assert_eq!("Sunday", Solution::day_of_the_week(3, 1, 1972));
-        // assert_eq!("Saturday", Solution::day_of_the_week(31, 8, 2019));
-        // assert_eq!("Sunday", Solution::day_of_the_week(18, 7, 1999));
+        assert_eq!("Sunday", Solution::day_of_the_week(3, 1, 1972));
+        assert_eq!("Saturday", Solution::day_of_the_week(31, 8, 2019));
+        assert_eq!("Sunday", Solution::day_of_the_week(18, 7, 1999));
         assert_eq!("Friday", Solution::day_of_the_week(1, 1, 1993));
         // assert_eq!("Sunday", Solution::day_of_the_week(15, 8, 1993));
     }
