@@ -6,3 +6,4 @@ mod s1995_count_quadruplets;
 mod s846_is_n_straight_hand;
 mod s507_check_perfect_number;
 mod s1614_max_depth;
+mod s71_simplifyPath;
