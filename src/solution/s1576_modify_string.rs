@@ -3,7 +3,6 @@ pub struct Solution {}
 impl Solution {
     pub fn modify_string(s: String) -> String {
         // 问号question_mark
-        let question_mark = '?';
         let question_mark_u8 = '?' as u8;
         let size = s.len();
         let chars = ['a' as u8, 'b' as u8, 'c' as u8];

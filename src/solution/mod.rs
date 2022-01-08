@@ -7,3 +7,4 @@ mod s2022_construct2_d_array;
 mod s390_last_remaining;
 mod s1185_day_of_the_week;
 mod s1576_modify_string;
+mod s89_gray_code;
