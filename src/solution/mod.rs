@@ -9,3 +9,8 @@ mod s1185_day_of_the_week;
 mod s1576_modify_string;
 mod s89_gray_code;
 mod s1629_slowest_key;
+mod s1995_count_quadruplets;
+mod s846_is_n_straight_hand;
+mod s507_check_perfect_number;
+mod s1614_max_depth;
+mod s71_simplifyPath;
