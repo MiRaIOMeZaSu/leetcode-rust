@@ -15,3 +15,4 @@ mod s507_check_perfect_number;
 mod s1614_max_depth;
 mod s71_simplifyPath;
 mod s747_dominant_index;
+mod s373_k_smallest_pairs;
