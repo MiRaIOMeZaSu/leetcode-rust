@@ -25,7 +25,7 @@ impl Solution {
                 let num1 = nums1[j];
                 let num2 = nums2[num1_indexs[j]];
                 let sum = num1 + num2;
-                if (sum < min) {
+                if sum < min {
                     temp = vec![num1, num2];
                     min = sum;
                     last_min_num1_index = j;
