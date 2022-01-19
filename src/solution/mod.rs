@@ -18,3 +18,4 @@ mod s334_increasing_triplet;
 mod s373_k_smallest_pairs;
 mod s1716_total_money;
 mod s539_find_min_difference;
+mod s219_contains_nearby_duplicate;
