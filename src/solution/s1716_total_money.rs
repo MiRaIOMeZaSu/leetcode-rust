@@ -2,7 +2,7 @@ pub struct Solution {}
 
 impl Solution {
     pub fn total_money(n: i32) -> i32 {
-        let mut times = n / 7;
+        let times = n / 7;
         let rest = n % 7;
         let mut week = 0;
         let mut ans = 0;

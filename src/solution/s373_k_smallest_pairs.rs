@@ -9,10 +9,10 @@ impl Solution {
         let mut num1_indexs: Vec<usize> = vec![0; size1];
         let mut left = 0;
         let mut right = 0;
-        let allSize = (size1 * size2) as i32;
+        let all_size = (size1 * size2) as i32;
         let mut size = k;
-        if size > allSize {
-            size = allSize;
+        if size > all_size {
+            size = all_size;
         }
         for i in 0..size {
             let mut last_min_num1_index = 0;

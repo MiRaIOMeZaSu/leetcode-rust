@@ -18,25 +18,25 @@ impl Solution {
     pub fn increasing_triplet(nums: Vec<i32>) -> bool {
         // 简单的前后比较
         let size = nums.len();
-        let mut frontMins: Vec<i32> = vec![];
-        let mut backMaxs: Vec<i32> = vec![0; size];
-        let mut presMin: i32 = i32::MAX;
+        let mut front_mins: Vec<i32> = vec![];
+        let mut back_maxs: Vec<i32> = vec![0; size];
+        let mut pres_min: i32 = i32::MAX;
         for i in 0..size {
-            presMin = min(presMin, nums[i]);
-            frontMins.push(presMin);
+            pres_min = min(pres_min, nums[i]);
+            front_mins.push(pres_min);
         }
         let mut i = size - 1;
-        let mut presMax: i32 = i32::MIN;
+        let mut pres_max: i32 = i32::MIN;
         loop {
-            presMax = max(presMax, nums[i]);
-            backMaxs[i] = presMax;
+            pres_max = max(pres_max, nums[i]);
+            back_maxs[i] = pres_max;
             if i == 0 {
                 break;
             }
             i -= 1;
         }
         for i in 1..size - 1 {
-            if frontMins[i - 1] < nums[i] && nums[i] < backMaxs[i + 1] {
+            if front_mins[i - 1] < nums[i] && nums[i] < back_maxs[i + 1] {
                 return true;
             }
         }
