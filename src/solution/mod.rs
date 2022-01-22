@@ -18,3 +18,4 @@ mod s747_dominant_index;
 mod s373_k_smallest_pairs;
 mod s1220_count_vowel_permutation;
 mod s576_find_paths;
+mod s1332_remove_palindrome_sub;
