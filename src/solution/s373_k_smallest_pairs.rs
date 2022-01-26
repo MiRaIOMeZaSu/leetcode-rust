@@ -8,7 +8,7 @@ impl Solution {
         let size2 = nums2.len();
         let mut i1 = 0;
         let mut i2 = 0;
-        for i in 0..k {
+        for _ in 0..k {
             ans.push(vec![nums1[i1], nums2[i2]]);
             if i1 + 1 < size1 {
                 if i2 + 1 < size2 {
