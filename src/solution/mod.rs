@@ -21,3 +21,4 @@ mod s576_find_paths;
 mod s1332_remove_palindrome_sub;
 mod s1688_number_of_matches;
 mod s1996_number_of_weak_characters;
+mod s1345_min_jumps;
