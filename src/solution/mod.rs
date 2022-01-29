@@ -20,3 +20,4 @@ mod s1716_total_money;
 mod s539_find_min_difference;
 mod s219_contains_nearby_duplicate;
 mod s2047_count_valid_words;
+mod s1765_highest_peak;
