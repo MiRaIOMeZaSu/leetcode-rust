@@ -22,3 +22,4 @@ mod s219_contains_nearby_duplicate;
 mod s2047_count_valid_words;
 mod s1765_highest_peak;
 mod s884_uncommon_from_sentences;
+mod s1342_number_of_steps;
