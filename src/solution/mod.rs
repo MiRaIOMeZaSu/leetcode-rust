@@ -26,3 +26,4 @@ mod s1342_number_of_steps;
 mod s1763_longest_nice_substring;
 mod s2000_reverse_prefix;
 mod s1414_find_min_fibonacci_numbers;
+mod s1725_count_good_rectangles;
