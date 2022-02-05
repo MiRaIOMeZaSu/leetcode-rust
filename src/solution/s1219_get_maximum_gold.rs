@@ -19,23 +19,9 @@ impl Solution {
         let m = grid_mut[0].len();
         let mut ans = 0;
         for i in 0..n {
-            let mut val = grid_mut[i][0];
-            if val != 0 {
-                ans = ans.max(Solution::solve(&mut grid_mut, 0, &items, i as i32, 0));
-            }
-            val = grid_mut[i][m - 1];
-            if val != 0 {
-                ans = ans.max(Solution::solve(&mut grid_mut, 0, &items, i as i32, (m - 1) as i32));
-            }
-        }
-        for i in 1..m - 1 {
-            let mut val = grid_mut[0][i];
-            if val != 0 {
-                ans = ans.max(Solution::solve(&mut grid_mut, 0, &items, 0, i as i32));
-            }
-            val = grid_mut[n - 1][i];
-            if val != 0 {
-                ans = ans.max(Solution::solve(&mut grid_mut, 0, &items, (n - 1) as i32, i as i32));
+            for j in 0..m {
+                let mut val = grid_mut[i][j];
+                ans = ans.max(Solution::solve(&mut grid_mut, 0, &items, i as i32, j as i32));
             }
         }
         return ans;
