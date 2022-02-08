@@ -35,3 +35,4 @@ mod s1688_number_of_matches;
 mod s1996_number_of_weak_characters;
 mod s1219_get_maximum_gold;
 mod s1748_sum_of_unique;
+mod s1001_grid_illumination;
