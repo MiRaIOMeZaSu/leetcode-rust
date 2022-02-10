@@ -36,3 +36,4 @@ mod s1996_number_of_weak_characters;
 mod s1345_min_jumps;
 mod s1405_longest_diverse_string;
 mod s2006_count_k_difference;
+mod s1447_simplified_fractions;
