@@ -41,3 +41,4 @@ mod s1984_minimum_difference;
 mod s1020_num_enclaves;
 mod s540_single_non_duplicate;
 mod s1380_lucky_numbers;
+mod s1719_check_ways;
