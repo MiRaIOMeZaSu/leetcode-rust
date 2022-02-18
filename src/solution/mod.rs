@@ -43,3 +43,4 @@ mod s540_single_non_duplicate;
 mod s1380_lucky_numbers;
 mod s1719_check_ways;
 mod s688_knight_probability;
+mod s1791_find_center;
