@@ -16,7 +16,7 @@ impl Solution {
             if arr_mut[index] == curr_target {
                 curr_target -= 1;
                 arr_mut = Vec::from(&arr_mut[0..index]);
-                break;
+                continue;
             }
             let mut arr_mut_next = vec![];
             while index > 0 && arr_mut[index] != curr_target {
@@ -46,6 +46,6 @@ mod tests {
 
     #[test]
     fn test_969() {
-        assert_eq!(vec![4, 2, 4, 3], Solution::pancake_sort(vec![3, 2, 4, 1]));
+        assert_eq!(vec![4, 2, 4, 3], Solution::pancake_sort(vec![1, 3, 2, 4]));
     }
 }
