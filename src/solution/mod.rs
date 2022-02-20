@@ -38,3 +38,4 @@ mod s1748_sum_of_unique;
 mod s1001_grid_illumination;
 mod s1189_max_number_of_balloons;
 mod s969_pancake_sort;
+mod s717_is_one_bit_character;
