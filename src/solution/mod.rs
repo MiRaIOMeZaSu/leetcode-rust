@@ -40,3 +40,4 @@ mod s1189_max_number_of_balloons;
 mod s969_pancake_sort;
 mod s717_is_one_bit_character;
 mod s2016_maximum_difference;
+mod s553_optimal_division;
