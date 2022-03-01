@@ -48,3 +48,4 @@ mod s838_push_dominoes;
 mod s917_reverse_only_letters;
 mod s1706_find_ball;
 mod s537_complex_number_multiply;
+mod s6_convert;
