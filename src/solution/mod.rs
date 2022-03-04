@@ -59,3 +59,4 @@ mod s537_complex_number_multiply;
 mod s6_convert;
 mod s564_nearest_palindromic;
 mod s258_add_digits;
+mod s2104_sub_array_ranges;
